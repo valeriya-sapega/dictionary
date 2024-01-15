@@ -1,0 +1,33 @@
+.container {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 520px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 356px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 328px;
+  }
+}
+
+.main + .nav {
+  width: 100%;
+}

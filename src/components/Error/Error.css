@@ -1,0 +1,12 @@
+.error {
+  text-align: center;
+
+  h3 {
+    margin-top: var(--margin-m);
+    margin-bottom: var(--margin-m);
+  }
+
+  p {
+    color: var(--grey-40);
+  }
+}

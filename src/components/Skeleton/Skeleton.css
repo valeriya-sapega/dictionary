@@ -1,0 +1,23 @@
+.skeleton {
+  background-color: var(--grey-20);
+  width: 100%;
+  margin: var(--margin-s) 0;
+  border-radius: 1rem;
+  /* animation-name: skeleton-animation; */
+  animation: 2s linear 1s infinite running skeleton-animation;
+  height: var(--fs-heading-l);
+}
+
+@keyframes skeleton-animation {
+  0% {
+    background-color: var(--grey-20);
+  }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  100% {
+    background-color: var(--grey-20);
+  }
+}

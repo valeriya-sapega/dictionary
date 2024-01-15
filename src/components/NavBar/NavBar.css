@@ -1,0 +1,101 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: var(--margin-l);
+  margin-bottom: var(--margin-l);
+  width: 100%;
+  align-items: center;
+
+  .nav__link {
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 1.4rem;
+
+    &.logo {
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
+      cursor: pointer;
+      color: var(--secondary-color);
+
+      &:hover {
+        background-color: #ffffff00;
+        color: var(--accent-purple);
+      }
+
+      &:visited {
+        color: var(--secondary-color);
+      }
+    }
+
+    &:hover {
+      background-color: var(--accent-purple-blur);
+      color: var(--secondary-color);
+      transition: background-color 0.3s ease-in-out;
+    }
+    &:visited {
+      color: var(--secondary-color);
+    }
+  }
+  .logo__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &.burger {
+      color: var(--secondary-color);
+    }
+  }
+
+  .nav__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+
+    .nav__link-container {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      margin-right: 0.4rem;
+
+      .counter {
+        position: absolute;
+        top: -0.2rem;
+        right: -0.4rem;
+        background-color: var(--accent-purple);
+        z-index: 10;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .counter__content {
+          color: var(--white);
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav {
+    display: block;
+  }
+  .nav__actions {
+    margin-top: var(--margin-m);
+
+    .nav__link.saved {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+}

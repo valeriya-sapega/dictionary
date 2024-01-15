@@ -1,0 +1,26 @@
+.source__link {
+  margin-top: 1.11rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .source {
+    font-size: var(--fs-body-s);
+    color: var(--grey-40);
+    text-decoration: underline;
+    text-decoration-color: var(--grey-20);
+
+    &.url {
+      color: var(--grey-60);
+      margin: 0 0.6rem 0 1.11rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      &.url {
+        width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

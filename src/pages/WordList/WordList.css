@@ -1,0 +1,35 @@
+.saved--section {
+  margin-bottom: 6rem;
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--margin-m);
+
+    .btns--sort .btn:first-child {
+      margin-right: var(--margin-s);
+    }
+  }
+
+  .word__article {
+    margin-bottom: var(--margin-m);
+
+    .phonetic {
+      margin-bottom: var(--margin-s);
+    }
+
+    .article-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.11rem;
+
+      .btn {
+        margin-top: 1.11rem;
+      }
+    }
+  }
+}

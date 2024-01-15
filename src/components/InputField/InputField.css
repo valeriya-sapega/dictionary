@@ -1,0 +1,35 @@
+.input__container {
+  position: relative;
+  margin-bottom: var(--margin-l);
+
+  .input {
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--grey-20);
+    border-radius: 1rem;
+    background-color: var(--grey-20);
+    color: var(--secondary-color);
+    font-weight: 700;
+    outline: none;
+
+    &:focus {
+      border: 1px solid var(--accent-purple);
+    }
+  }
+  .error-input,
+  .error-input:focus {
+    border: 1px solid var(--accent-red);
+  }
+
+  .input__icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.1rem;
+    color: var(--accent-purple);
+    cursor: pointer;
+  }
+
+  .error-icon {
+    color: var(--accent-red);
+  }
+}

@@ -1,0 +1,11 @@
+.searchbar {
+  position: relative;
+
+  .searchbar__error {
+    position: absolute;
+    color: var(--accent-red);
+    font-size: var(--fs-body-s);
+    top: 108%;
+    left: 1%;
+  }
+}

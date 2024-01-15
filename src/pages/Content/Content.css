@@ -1,0 +1,99 @@
+.word-data {
+  margin-bottom: var(--margin-xl);
+
+  .word--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--margin-l);
+
+    .main-text {
+      font-size: var(--fs-heading-l);
+      margin-bottom: var(--margin-s);
+    }
+
+    .phonetic {
+      font-weight: 400;
+      color: var(--accent-purple);
+    }
+
+    .audio--control {
+      background-color: var(--accent-purple-blur);
+      color: var(--accent-purple);
+      border: none;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      position: relative;
+
+      .play--icon {
+        position: absolute;
+        top: 34%;
+        right: 29%;
+      }
+    }
+
+    .audio--control:hover {
+      background-color: var(--accent-purple);
+      color: #ffffff;
+      transition: 0.4s;
+    }
+  }
+
+  .word--info {
+    .word--content {
+      margin-top: var(--margin-l);
+
+      .data {
+        .meaning {
+          margin-bottom: var(--margin-m);
+          .meaning__heading {
+            font-size: var(--fs-heading-s);
+            font-weight: 400;
+            color: var(--grey-40);
+          }
+
+          .list {
+            margin-top: 1.33rem;
+            margin-left: 2rem;
+            list-style-position: outside;
+
+            .definition::marker {
+              color: var(--accent-purple);
+              font-size: 1rem;
+            }
+            .definition {
+              padding-left: 1rem;
+              margin-top: var(--margin-s);
+
+              .example {
+                padding-top: var(--margin-s);
+                color: var(--grey-40);
+                font-weight: 300;
+              }
+            }
+          }
+        }
+
+        .synonyms {
+          margin-bottom: var(--margin-m);
+          display: flex;
+          flex-direction: row;
+
+          .synonyms__heading {
+            margin-right: var(--margin-m);
+            font-weight: 400;
+            color: var(--grey-40);
+            font-size: var(--fs-heading-s);
+          }
+
+          .synonyms--word {
+            color: var(--accent-purple);
+            font-size: var(--fs-heading-s);
+          }
+        }
+      }
+    }
+  }
+}
