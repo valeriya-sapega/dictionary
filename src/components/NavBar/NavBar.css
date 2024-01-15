@@ -8,6 +8,7 @@
   align-items: center;
 
   .nav__link {
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 0.8rem;
     border-radius: 1.4rem;
