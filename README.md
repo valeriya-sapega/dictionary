@@ -2,7 +2,7 @@
 
 Responsive React app using Dictionary API, **Redux**, **React Router**, **LocalStorage**, **useSound hook**, and **Axios**.
 
-[Netlify Link](https://your-dictionary-app-vs.netlify.app/)) 
+[Netlify Link](https://your-dictionary-app-vs.netlify.app/)
 
 ### Challenge:
 
