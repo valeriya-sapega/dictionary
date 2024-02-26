@@ -53,19 +53,6 @@ body.dark {
   --box-shadow: rgb(143, 25, 232);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --primary-color: #050505;
-    --secondary-color: #ffffff;
-    --grey-20: rgb(50, 50, 50);
-    --grey-40: rgb(80, 80, 80);
-    --grey-60: rgb(100, 100, 100);
-    --accent-purple-blur: rgba(142, 25, 232, 0.4);
-    --accent-red-blur: rgba(255, 82, 108, 0.4);
-    --box-shadow: rgb(143, 25, 232);
-  }
-}
-
 h1 {
   font-size: var(--fs-heading-l);
   text-transform: lowercase;
