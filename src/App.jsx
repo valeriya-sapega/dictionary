@@ -10,7 +10,10 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Main />} />
           <Route path="words" element={<WordList />} />
-          <Route path="*" element={<div>Error</div>} />
+          <Route 
+            path='*'
+            element={<Error text="Page you were looking for doesn't exist" />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>
