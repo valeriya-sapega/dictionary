@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import WordList from './pages/WordList/WordList';
 import Main from './pages/Main/Main';
 import SharedLayout from './pages/SharedLayout/SharedLayout';
+import Error from './components/Error/Error';
 
 function App() {
   return (
