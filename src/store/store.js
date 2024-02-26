@@ -7,7 +7,6 @@ import {
   sortWords,
   filterByWord,
   reset,
-  selectFilteredWords,
 } from './slices/wordsSlice';
 import { fontReducer, changeFont } from './slices/fontSlice';
 import { filterSelector } from './selectors/filterSelector';
@@ -28,7 +27,6 @@ export {
   sortWords,
   filterByWord,
   reset,
-  selectFilteredWords,
   changeFont,
   filterSelector,
 };
