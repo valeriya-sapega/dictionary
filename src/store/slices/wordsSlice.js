@@ -61,15 +61,6 @@ const wordsSlice = createSlice({
   },
 });
 
-export const selectFilteredWords = createSelector(
-  ({ words: { data, filterWord } }) => ({ data, filterWord }),
-  ({ data, filterWord }) => {
-    const wordToFilter = filterWord.toLowerCase();
-    return data.filter((word) =>
-      word.term.toLowerCase().includes(wordToFilter)
-    );
-  }
-);
 
 export const wordsReducer = wordsSlice.reducer;
 export const { addWord, removeWord, sortWords, reset, filterByWord } =
